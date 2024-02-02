@@ -1,0 +1,1257 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+
+<title>TeethOS 3.11 - Teethy.ca</title>
+<style>
+    
+    /*CUSTOM FONTS*/
+    @font-face {
+  font-family: Ubuntu;
+  src: url(fonts/Ubuntu-Regular.ttf);
+  font-display: swap;    
+}
+            @font-face {
+  font-family: wingding;
+  src: url(fonts/wingding.ttf);
+  font-display: swap;    
+}
+   @font-face {
+  font-family: Cookie;
+  src: url(fonts/Cookie-Regular.ttf);
+     font-display: swap;
+    }
+    /*END CUSTOM FONTS*/
+    body {
+  background-image:url(images/TeethOS311.PNG);
+   background-position: 50% -50%; 
+  background-repeat: no-repeat;
+    background-color:#7334A3;
+    text-align:center;
+      font-family: 'Ubuntu', serif, sans-serif;
+    p {
+      position: relative;
+      color:#5fc1f5;
+     z-index:0;
+    }
+ 
+    a {
+      position: relative;
+      color:#ccc;
+      z-index:3;
+      text-decoration: none;
+    }
+    h1, h2, h3, h4, h5 {
+      position: relative;
+      color:#5fc1f5;
+      text-shadow: 1px 0 0 #572c78, 0 -1px 0 #572c78, 0 1px 0 #572c78, -1px 0 0 #572c78 !important;
+      z-index:3;
+    }
+    .p-margin{
+    position: relative;
+    margin-left: 10%; 
+    margin-right: 10%;
+    z-index:3;
+    }
+    div {
+      padding-top:5px;
+      padding-bottom:5px;
+      margin:auto;
+      width:95%;
+    background-color: transparent;  
+    border: double;
+    border-color: #7334A3; 
+      z-index:-1;
+    }
+    
+      .table {
+    background-color: #823fb5;  
+    }
+    
+        .page-container {
+      padding-top:5px;
+      padding-bottom:5px;
+      margin:auto;
+      width:95%;
+    background-color: transparent;  
+    border: none;
+    /*background-image:url(images/vaporTile.png);*/
+      z-index:3;
+    }
+    
+    img {
+    background-color:#8b47bf;
+    border: double;
+    border-color: #7334A3; 
+    
+    }
+    
+    /*LOGO TEXT*/
+    .logo {
+      font-family: 'Cookie', serif, sans-serif; 
+      font-size: 120px;
+      position: absolute;
+      top: -10px;
+      left: 70px;
+      text-decoration: none;
+     
+    }
+    
+    .autotable {
+     padding-top:inherit;
+     padding-bottom:inherit;
+     overflow-x:auto;
+     border:none;
+      
+    }
+    
+    /*Some Table Styling*/
+ th, td {
+   color:white;
+  border:3px double #222;
+  outline-color:#7334A3;
+   border-color: #7334A3;
+   background-color:#8b47bf;
+   font-size:24px;
+   margin-left: auto;
+  margin-right: auto;
+    transition: all 0.2s;
+}
+    
+    th:hover,td:hover {
+    outline-color:#8b47bf;
+   border-color: #8b47bf;
+   background-color:#7334A3;
+    }
+    table {
+    margin-left: auto;
+    margin-right: auto;
+    z-index:3;
+    }
+.overlay {
+    position: relative;
+  
+    margin: 15px;
+    text-align: center;
+    transition: all 0.2s;
+}
+    .overlay:hover {
+    color:yellow;
+      
+    }
+    
+    .overlay:active {
+    color:#7334A3;
+    }
+    /*end of table styling*/
+    
+    .autoimgsize img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    }
+    
+    .tableimg {
+    border-style: none;
+    margin-bottom:-6px;
+    }
+
+ /*END HIDE ITEMS*/           
+  .jazzbanner
+    {
+  background-image: url("/web/20231016022100im_/https://teethy.ca/images/grid.png");
+  background-repeat:round;
+  background-repeat-y: no-repeat;
+  min-width:90%;
+  max-width: 100%;
+  height: 4.2vh;
+  border:none;
+   
+    }
+      
+    .left-col-head {
+   
+    background-image: url("/web/20231016022100im_/https://teethy.ca/images/col-head.png");
+    background-repeat:no-repeat;
+    height:93px;
+    min-width: 100%;
+    max-width: 100%;
+    border:none;
+    position: absolute;
+    top: 39px;
+    left: 25px;
+    background-color:transparent;
+z-index:1;
+    
+    }
+    
+    .left-col-leg {
+     
+      padding:0px;
+    background-image: url("/web/20231016022100im_/https://teethy.ca/images/col-leg.png");
+    background-repeat:repeat-y;
+    height:3690px;
+    min-width: 100%;
+    max-width: 100%;
+    border:none;
+    position: absolute;
+    top: 88px;
+    left: 0px;
+    background-color:transparent;
+ z-index:1;
+    }
+     .left-col-bottom {
+     
+       padding:0px;
+      -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+    background-image: url("/web/20231016022100im_/https://teethy.ca/images/col-head.png");
+    position:absolute;
+    background-repeat:no-repeat;
+    height:93px;
+    min-width: 100%;
+    max-width: 100%;
+    border:none; 
+    background-color:transparent;
+    bottom:-2.5%;
+  z-index:1;
+    }
+    /*===================================================*/
+          
+    .right-col-head {
+    background-image: url("/web/20231016022100im_/https://teethy.ca/images/col-head.png");
+    background-repeat:no-repeat;
+    height:93px;
+    min-width: 100%;
+    max-width: 100%;
+    border:none;
+    position: absolute;
+    top: 39px;
+   
+    right: -1705px;
+    background-color:transparent;
+   z-index:1;
+    
+    }
+    
+    .right-col-leg {
+    background-image: url("/web/20231016022100im_/https://teethy.ca/images/col-leg.png");
+    background-repeat:repeat-y;
+    height:3680px;
+    min-width: 100%;
+    max-width: 100%;
+    border:none;
+    position: absolute;
+    top: 88px;
+    left: 0px;
+    background-color:transparent;
+  z-index:1;
+     
+    }
+     .right-col-bottom {
+      -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+    background-image: url("/web/20231016022100im_/https://teethy.ca/images/col-head.png");
+    position:absolute;
+    background-repeat:no-repeat;
+    height:93px;
+    min-width: 100%;
+    max-width: 100%;
+    border:none; 
+    background-color:transparent;
+    bottom:-2.5%;
+    z-index:1;
+     
+    }
+    
+    .ani-con {
+      
+      border:none;
+      position: relative;
+      width:90vw;
+      height:60vh;
+      margin-bottom:-75px;
+      padding-bottom:2%;
+    }
+    .ani-logo {
+      border:none;
+      animation-name: ani-logo;
+      position: relative;
+      right:20px;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      width:90%;
+    }
+    
+    .ani-logo2 {
+      border:none;
+      animation-name: ani-logo2;
+      position: relative;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      width:90%;
+    }
+    
+        .ani-con2 {
+      padding-top:3%;
+      border:none;
+      position: relative;
+      width:90%;
+      height:60%;
+      display:none;
+    }
+    
+@keyframes ani-logo {
+  0% {box-shadow: 0px 0px 40px #0ec9e6;top:-50px;width:40%;}
+  10% {box-shadow: 0px 0px 30px #dbd407;top:0px;width:35%;}
+  20% {box-shadow: 0px 0px 40px #0ec9e6;top:-50px;width:40%;}
+  30% {box-shadow: 0px 0px 30px #dbd407;top:0px;width:35%;}
+  40% {box-shadow: 0px 0px 40px #0ec9e6;top:-50px;width:40%;}
+   50% {box-shadow: 0px 0px 30px #dbd407;top:0px;width:35%;}
+   60% {box-shadow: 0px 0px 40px #0ec9e6;top:-50px;width:40%;}
+   70% {box-shadow: 0px 0px 30px #dbd407;top:0px;width:35%;}
+   80% {box-shadow: 0px 0px 40px #0ec9e6;top:-50px;width:40%;}
+   90% {box-shadow: 0px 0px 30px #dbd407;top:0px;width:35%;}
+  100% {box-shadow: 0px 0px 40px #0ec9e6;top:-50px;width:40%;}
+  
+    }
+    
+    @keyframes ani-logo2 {
+  0% {box-shadow: 0px 0px 40px #0ec9e6;}
+  10% {box-shadow: 0px 0px 30px #dbd407;}
+  20% {box-shadow: 0px 0px 40px #0ec9e6;}
+  30% {box-shadow: 0px 0px 30px #dbd407;}
+  40% {box-shadow: 0px 0px 40px #0ec9e6;}
+   50% {box-shadow: 0px 0px 30px #dbd407;}
+   60% {box-shadow: 0px 0px 40px #0ec9e6;}
+   70% {box-shadow: 0px 0px 30px #dbd407;}
+   80% {box-shadow: 0px 0px 40px #0ec9e6;}
+   90% {box-shadow: 0px 0px 30px #dbd407;}
+  100% {box-shadow: 0px 0px 40px #0ec9e6;}
+  
+    }
+    
+    
+     /*HIDE WHEN SCREEN TOO SMALL*/
+@media (max-width:1275px) {
+  h1#hideitems {
+    display: none;
+    
+  }
+  a#hideitems {
+    display: none;
+    
+  }
+  div#hideitems {
+  display: none;
+  }
+  div#itemshow {
+  
+  display:flex;
+  }
+      } 
+    
+    @media (max-width:1800px) {
+  
+  div#hideitemscol {
+  display: none;
+  }
+      }
+    
+    
+    /*======================================= COPY OVER TO LIVE SITE HERE AND BELOW =================================================================================*/
+.open-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display:none;
+  position: fixed;
+  top:10%;
+  left:25%;
+  margin:auto;
+  border:7px double #572c78; /* Internal Line of outline*/
+  z-index: 1000;
+  height:85%;
+  width:50%;
+  background-color:#ac79d2;
+   opacity: initial;
+ overflow-y:auto;
+}
+
+   .form-popup p {
+        text-shadow: 1px 0 0 #111, 0 -1px 0 #111, 0 1px 0 #111, -1px 0 0 #111;
+        font-size:16px;
+     font-weight:bold;
+   }
+  
+.h2popup {
+    position: relative;
+    top: -21px;
+    font-family: monospace, serif, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #FDA1FF;
+    width: 100%;
+    height: 22px;
+    border-bottom: 1px #572c78 solid;
+   opacity: initial;
+}
+  
+  .h2popup-body {
+    position: relative;
+    top: -32px;
+    font-family: monospace, serif, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #FDA1FF;
+    width: 100%;
+    height: 22px;
+    border-bottom: 1px #572c78 solid;
+   opacity: initial;
+}
+    .minimise {
+    position: relative;
+    margin-right: 0;
+    top: -19px;
+    width: 18px;
+    height: 8px;
+    border: 2px outset;
+    background-color: lightgray;
+    z-index: 3;
+	}
+	
+	.minimise:active {
+    position: relative;
+    margin-right: 0;
+    top: -19px;
+    width: 18px;
+    height: 8px;
+    border: 2px inset;
+    background-color: #999999;
+    z-index: 3;
+}
+.handle {
+    position: absolute;
+    margin-left: 0;
+    top: 0px;
+    width: 22px;
+    height: 12px;
+    border: none;
+    border-right: 1px solid #572c78;
+    background-color: #dede;
+    z-index: 3;
+}
+   .handle-dash {
+    position: relative;
+    color: white;
+    font-size: 34px;
+    top: -17px;
+	user-select: none
+}
+    .suppopup {
+      position:relative;
+      color:black;
+      font-size:20px;
+      top:-8px;
+      text-shadow:none;
+	  user-select: none
+    }
+/* Add styles to the form container */
+.form-container {
+  max-width: 100%;
+  padding: 10px;
+  background-color: white;
+  
+}
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+    
+.cusbutton {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #7334A3;
+    border: outset;
+    color: #5fc1f5;
+    text-align: center;
+    font-size: 18px;
+    width: 100px;
+    cursor: pointer;
+    margin: 5px;
+    font-family: monospace;
+    border-color: #8b47bf;
+  z-index:1002;
+   opacity: initial;
+}
+    /*.cusbutton:hover {
+      color:#7334A3;
+      background-color:#5fc1f5;
+      border-color: #8b47bf;
+    }*/
+.cusbutton:active {
+    border: inset;
+    background-color: #5f2d86;
+    border-color: #8b47bf;
+   opacity: initial;
+}
+
+    
+	.form-window {
+  display:inline;
+  position: fixed;
+  top:5%;
+  left:5%;
+  margin:auto;
+  border:7px double #572c78; /* Internal Line of outline*/
+  z-index: 1000;
+  height:85%;
+  width:90%;
+  background-color:#ac79d2;
+   opacity: initial;
+ overflow-y:auto;
+}
+   .form-window p {
+        text-shadow: 1px 0 0 #111, 0 -1px 0 #111, 0 1px 0 #111, -1px 0 0 #111;
+        font-size:16px;
+     font-weight:bold;
+   }
+	
+	
+.divsticky {
+    position: sticky;
+    top: 0px;
+	left: 0px;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    margin: auto;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-color: #7334A3;
+    z-index: 1;
+	}
+
+	table.desktoptable {
+	width:100%;
+	}
+	
+	table.desktoptable td {
+	background-color:transparent;
+	/*DEBUG BORDERS*/
+	border-style:none;
+	border-width:1px;
+	/*END OF DEBUG BORDERS*/
+	height:65px;
+	
+	max-height:65px;
+	width:65px;
+	
+	max-width:65px;
+	}
+	table.desktoptable img {
+	border:none;
+	width:auto;
+	height:auto;
+	background-color:transparent;
+	margin:0px;
+	}
+	
+	table.desktoptable div {
+	border:none;
+	}
+	
+	table.desktoptable p {
+	font-family: monospace;
+	font-size:12px;
+	text-shadow:none;
+	color:black;
+	top:-6px;
+	margin:0px;
+	}
+
+	
+	.program {
+	display:none;
+	position:absolute;
+	top:90%;
+	left:5%;
+	z-index:1;
+	border:none;
+	background-color:transparent;
+	max-width:65px;
+	max-height:65px;
+	}
+	.program img {
+	position:relative;
+	top:0px;
+	left:0px;
+	border:none;
+	background-color:transparent;
+	}
+	.program p {
+	color:white;
+	font-size:12px;
+	font-family: monospace;
+	position:relative;
+	top:-15px;
+	}
+</style>
+</head>
+<body>
+
+          <!-- LINK SPAN DESKTOP -->
+		  
+    <div class="form-window" id="program-man">
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>TeethOS 3.11<span style="padding-left:5px;font-weight:normal;font-family: wingdings, wingding, serif, sans-serif;">ÿ</span><div class="minimise" onclick="closeFormprogramman()"><sup class="suppopup">▾</sup></div></h2></div></center>
+       
+ <img loading="lazy" style="position:fixed;border:none;background-color:transparent;max-width:25%;user-select:none;" src="images/vapor-logo.png" alt="Logo image." title="Welcome to TeethOS">
+
+<table class="desktoptable" cellpadding="0">
+<tbody>
+<tr>
+<td><div onclick="openFormaboutError()"><img src="images/DOS.PNG"><p>MS-DOS</p></div></td>
+<td><div onclick="openFormaboutError()"><img src="images/FMAN.PNG"><p>File Manager</p></div></td>
+<td><div onclick="openFormaboutSystem()"><img src="images/HLP.PNG"><p>About</p></div></td>
+<td><div onclick="openFormaboutUser()"><img src="images/user.png"><p>User</p></div></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+
+</tr>
+<tr>
+
+<td><div onclick="openFormaboutProj()"><img src="images/PROJ.PNG"><p>Projects</p></div></td>
+<td><div onclick="openFormaboutError()"><img src="images/FRIENDS.PNG"><p>Friends-Partners</p></div></td>
+<td><div onclick="openFormaboutError()"><img src="images/SITES.PNG"><p>Cool Sites</p></div></td>
+<td><div onclick="openFormMusic()"><img src="images/MUSIC.PNG"><p>Music</p></div></td>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+</tr>
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><div onclick="openFormaboutError()"><img src="images/CLK.PNG"><p>Clock</p></div></td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+	
+          <!-- LINK SPAN ABOUT USER -->
+    <div class="form-popup" style="height:62%;" id="aboutUser">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>About: Teethy<div onclick="closeFormaboutUser()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+    <table style="text-align:left;" class="desktoptable">
+	
+    <tr style="z-index:0;">
+<td style="width:40%;"><img style="position:relative;top:-30%;padding-left:5px;border:none;background-color:transparent;max-width:90%;" src="images/hairbrush.png"></td>
+<td style="padding-left:10px;width:60%;">
+<p style="font-size:14px;z-index:0;">Name: Teethy
+<p style="font-size:14px;">Birthday: 27-SEPT-1996
+<p style="font-size:14px;">Nationality: Canadian&nbsp;<img style="position:relative;top:5px;border:solid;border-color:#572c78;border-width:1px;" src="images/ca.png">
+<hr>
+<p style="font-size:14px;">Bio: Hello! I'm Teethy. A hobbyist web designer from Canada. I mainly make gimmick websites that do weird or particular things.
+I do most of my web stuff manually with the occasional use of open source code found on the net.
+<p style="font-size:14px;">The character Teethy is like a mascot or avatar to represent me and my projects online. A cute symbol to give my sites some life.
+<hr>
+<p style="font-size:14px;">Contact:
+<p style="font-size:14px;">Email
+<p style="font-size:14px;">Twitter
+
+<hr>
+<img style="position:relative;top:0px;left:20%;border:none;background-color:transparent;max-width:90%;" src="images/relax_tablet.png">
+ </td>
+</tr>
+    </table>
+    <br><button class="cusbutton" onclick="closeFormaboutUser()">OK</button>
+    
+    </div>
+    
+ <script>
+function openFormaboutUser() {
+  document.getElementById("aboutUser").style.display = "block";
+}
+
+function closeFormaboutUser() {
+  document.getElementById("aboutUser").style.display = "none";
+}
+</script>
+
+ <!-- END OF LINK SPAN ABOUT USER -->	
+ 
+  <!-- LINK SPAN ABOUT PROJECTS -->
+    <div class="form-popup" style="width:35%;height:36%;top:20%;left:33%;z-index:1000;" id="aboutProj">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>Projects<div onclick="closeFormaboutProj()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+	
+<table class="desktoptable" cellpadding="1">
+<tbody>
+<tr>
+<td><div onclick="openFormaboutProjRead()"><img src="images/README.PNG"><p>README</p></div></td>
+<td><div onclick="openFormaboutError()"><img src="images/IO.PNG"><p>TEETHY.IO</p></div></td>
+<td><div onclick="openFormMoe()"><img src="images/MOE.png"><p>TEETHY.MOE</p></div></td>
+<td><div onclick="openFormaboutError()"><img src="images/APP.PNG"><p>TEETHY.APP</p></div></td>
+<td><div onclick="openFormaboutError()"><img src="images/NAZO.PNG"><p>NAZOTCHI.CA</p></div></td>
+</tr>
+<tr>
+
+<td><div onclick="openFormaboutError()"><img src="images/DYNMAP.PNG"><p>DYNMAP_GUIDE</p></div></td>
+<td><div onclick="openFormaboutError()"><img src="images/NSPROBE.PNG"><p>NS_PROBE</p></div></td>
+<td><div onclick="openFormCA()"><img src="images/TEETHY_CA.PNG"><p>TEETHY.CA</p></div></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+</tr>
+<tbody>
+</table>
+    </div>
+    
+ <script>
+function openFormaboutProj() {
+  document.getElementById("aboutProj").style.display = "block";
+ 
+}
+
+function closeFormaboutProj() {
+  document.getElementById("aboutProj").style.display = "none";
+}
+</script>
+
+ <!-- END OF LINK SPAN ABOUT PROJECTS -->
+ 
+ 	 <!-- LINK SPAN ABOUT PROJECTS-README -->
+    <div class="form-popup" style="width:60%;height:45%;left:10%;z-index:1001;" id="aboutProjRead">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>PROJECTS_README.TXT (Read-only)<div onclick="closeFormaboutProjRead()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+  
+  <iframe style="width:98%;height:65%;" src="readme/PROJREADME.txt">
+  </iframe>
+  <br>
+	<button style="z-index:0;" class="cusbutton" onclick="closeFormaboutProjRead()">Exit</button>
+    </div>
+    
+ <script>
+function openFormaboutProjRead() {
+  document.getElementById("aboutProjRead").style.display = "block";
+ 
+}
+
+function closeFormaboutProjRead() {
+  document.getElementById("aboutProjRead").style.display = "none";
+}
+</script>
+
+ <!-- END OF LINK SPAN ABOUT PROJECTS-README -->
+ 
+   <!-- LINK SPAN TEETHY.MOE -->
+    <div class="form-popup" style="width:35%;height:36%;top:22%;left:32%;z-index:1001;" id="aboutMoe">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>Teethy dot moe - Retro Arcade<div onclick="closeFormMoe()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+	
+<table class="desktoptable" cellpadding="1">
+<tbody>
+<tr>
+<td><div onclick="openFormMoeRead()"><img src="images/HLPBOOK.PNG"><p>README</p></div></td>
+<td><div onclick="openFormaboutError()"><img src="images/MOEico.png"><p>Launch</p></div></td>
+<td><div><a href="images/gMoe.jpg" target="_blank"><img src="images/JPEG.PNG"><p>Logo.JPG</p></a></div></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tbody>
+</table>
+    </div>
+    
+ <script>
+function openFormMoe() {
+  document.getElementById("aboutMoe").style.display = "block";
+ 
+}
+
+function closeFormMoe() {
+  document.getElementById("aboutMoe").style.display = "none";
+}
+</script>
+
+ <!-- END OF LINK SPAN TEETHY.MOE -->
+ 
+ 
+  <!-- LINK SPAN TEETHY.MOE README -->
+    <div class="form-popup" style="width:45%;height:65%;top:10%;left:20%;z-index:1002;" id="aboutMoeRead">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>Help: teethy.moe - README.HLP<div onclick="closeFormMoeRead()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+ <h1>Teethy dot moe - Retro Arcade</h1>
+ <img style="position:relative;top:-10%;border:none;background-color:transparent;" src="images/teeth_relax_small.png">
+ <hr>
+ <p>This site is a little side project where I host various emulators that can run within a web browser.
+The site is themed to look like a mix between older systems and arcade machines.
+<br>
+<p>Some games' progress can be saved, however it isn't reliable.
+The emulators require JavaScript enabled on your browser to run.
+<br><p>Clicking Launch will load the site immediately.
+  </div>
+    
+ <script>
+function openFormMoeRead() {
+  document.getElementById("aboutMoeRead").style.display = "block";
+ 
+}
+
+function closeFormMoeRead() {
+  document.getElementById("aboutMoeRead").style.display = "none";
+}
+</script>
+
+ <!-- END OF LINK SPAN TEETHY.MOE README -->
+ 
+ 
+    <!-- LINK SPAN TEETHY.CA -->
+    <div class="form-popup" style="width:35%;height:36%;top:22%;left:32%;z-index:1001;" id="aboutCA">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>TeethOS 3.11 powered by Teethy.ca<div onclick="closeFormCA()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+	
+<table class="desktoptable" cellpadding="1">
+<tbody>
+<tr>
+<td><div onclick="openFormCARead()"><img src="images/HLPBOOK.PNG"><p>README</p></div></td>
+<td><div onclick="crashOS()"><img src="images/teethOSico.png"><p>RUN.EXE</p></div></td>
+<td><div><a href="images/teethos-vapor.png" target="_blank"><img src="images/PNG.PNG"><p>Logo.PNG</p></a></div></td>
+<td><div onclick="openFormaboutError()"><img src="images/TTF.PNG"><p>couri.TTF</p></div></td>
+<td><div onclick="openFormaboutError()"><img src="images/FILE.PNG"><p>shell.DLL</p></div></td>
+<td><div onclick="openFormaboutError()"><img src="images/FILE.PNG"><p>conf.INI</p></div></td>
+</tr>
+<tr>
+<td><div onclick="openFormaboutError()"><img src="images/FILE.PNG"><p>user.INI</p></div></td>
+<td><div onclick="openFormaboutError()"><img src="images/FILE.PNG"><p>system.DLL</p></div></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tbody>
+</table>
+    </div>
+    
+ <script>
+function openFormCA() {
+  document.getElementById("aboutCA").style.display = "block";
+ 
+}
+
+function closeFormCA() {
+  document.getElementById("aboutCA").style.display = "none";
+}
+</script>
+
+ <!-- END OF LINK SPAN TEETHY.CA -->
+ 
+ 
+  <!-- LINK SPAN TEETHY.CA README -->
+    <div class="form-popup" style="width:45%;height:65%;top:10%;left:20%;z-index:1002;" id="aboutCARead">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>Help: teethy.ca - README.HLP<div onclick="closeFormCARead()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+ <h1>Teethy.ca</h1>
+ <img style="position:relative;top:0%;border:none;background-color:transparent;max-width:30%;" src="images/vapor-logo.png">
+ <hr>
+ <p>My main website. I designed it to look like a Windows 3.1 system but with my purple colouring theme that I've used on iterations of my sites for years.
+ <p>Click on things and see what happens. Maybe you'll find something hidden!
+<br><p>Clicking RUN.EXE will crash the system causing it to reboot as it'll try running the OS within the OS.
+  </div>
+    
+ <script>
+function openFormCARead() {
+  document.getElementById("aboutCARead").style.display = "block";
+ 
+}
+
+function closeFormCARead() {
+  document.getElementById("aboutCARead").style.display = "none";
+}
+</script>
+
+ <!-- END OF LINK SPAN TEETHY.CA README -->
+ 
+ 
+ 
+           <!-- LINK SPAN ABOUT SYSTEM -->
+    <div class="form-popup" style="width:35%;height:40%;left:33%;" id="aboutSystem">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>About: System<div onclick="closeFormaboutSystem()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+    <table style="text-align:left;" class="desktoptable">
+	
+    <tr style="z-index:0;">
+<td style="width:20%;"><img style="position:relative;top:-90px;padding-left:5px;border:none;background-color:transparent;max-width:90%;" src="images/TeethOSmini.png"></td>
+<td style="padding-left:10px;width:80%;">
+<p style="font-size:14px;z-index:0;">TeethOS Home System
+<p style="font-size:14px;">Version 3.11
+<p style="font-size:14px;">Copyright &copy; 2015-2024 Teethy dot CA.
+<br><br><br>
+<p style="font-size:14px;">This product is licensed to:
+<p style="font-size:14px;">Teethy
+<p style="font-size:14px;">The Phoenix Network
+<hr>
+<p style="font-size:14px;">Please contact your hardware manufacturer for TeethOS technical support.
+<hr>
+<p style="font-size:14px;">386 Enhanched Mode
+<p style="font-size:14px;">Memory: XX GB
+<p style="font-size:14px;">Disk Size: XX TB
+<p style="font-size:14px;">Powered by: Teethy.ca
+ </td>
+</tr>
+    </table>
+	<button style="position:absolute;top:8%;left:77%;z-index:0;" class="cusbutton" onclick="closeFormaboutSystem()">OK</button>
+    </div>
+    
+ <script>
+function openFormaboutSystem() {
+  document.getElementById("aboutSystem").style.display = "block";
+}
+
+function closeFormaboutSystem() {
+  document.getElementById("aboutSystem").style.display = "none";
+}
+</script>
+
+ <!-- END OF LINK SPAN ABOUT SYSTEM -->
+	
+	
+	
+   <!-- LINK SPAN MUSIC -->
+    <div class="form-popup" style="width:35%;height:36%;top:22%;left:32%;z-index:1001;" id="Music">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>Music Files<div onclick="closeFormMusic()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+	
+<table class="desktoptable" cellpadding="1">
+<tbody>
+<tr>
+<td><div onclick="openFormMusicZelda()"><img src="images/MUSICFILE.PNG"><p>Zelda.MP3</p></div></td>
+<td><div onclick="openFormMusicNLights()"><img src="images/MUSICFILE.PNG"><p>NeonLights.MP3</p></div></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tbody>
+</table>
+    </div>
+    
+ <script>
+function openFormMusic() {
+  document.getElementById("Music").style.display = "block";
+ 
+}
+
+function closeFormMusic() {
+  document.getElementById("Music").style.display = "none";
+}
+</script>
+
+ <!-- END OF LINK SPAN MUSIC -->
+	
+  <!-- LINK SPAN MUSIC ZELDA -->
+    <div class="form-popup" style="width:33%;height:47%;top:18%;left:15%;z-index:1002;" id="MusicZelda">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>Music Player BETA Version - Zelda.MP3<div onclick="closeFormMusicZelda()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+ <p>Title: The Legend of Zelda Theme (NES)</p>
+ <img style="border:solid;border-width:1px;background-color:transparent;" src="images/Zelda.png" alt="Album Art" title="Album Art">
+ <audio id="zeldaTheme">
+  <source src="sounds/TheLegendofZelda.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+ <hr>
+ <button class="cusbutton" onclick="playZelda()">Play</button> &nbsp;
+ <button class="cusbutton" onclick="pauseZelda()">Pause</button>
+ <button class="cusbutton" onclick="stopZelda()">Stop</button>
+  </div>
+    
+ <script>
+function openFormMusicZelda() {
+  document.getElementById("MusicZelda").style.display = "block";
+ 
+}
+
+function closeFormMusicZelda() {
+  document.getElementById("MusicZelda").style.display = "none";
+  zelda.pause();
+  zelda.currentTime = 0;
+}
+
+var zelda = document.getElementById("zeldaTheme"); 
+
+function playZelda() { 
+  zelda.play(); 
+} 
+
+function pauseZelda() { 
+  zelda.pause(); 
+} 
+function stopZelda() { 
+  zelda.pause(); 
+  zelda.currentTime = 0;
+} 
+</script>
+
+ <!-- END OF LINK SPAN MUSIC ZELDA -->	
+ 
+ <!-- LINK SPAN MUSIC NEON_LIGHTS -->
+    <div class="form-popup" style="width:33%;height:50%;top:18%;left:15%;z-index:1002;" id="MusicNLights">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>Music Player BETA Version - NeonLights.MP3<div onclick="closeFormMusicNLights()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+ <p>Title: Neon Lights
+ <p>Artist: Stevia Sphere</p>
+ <img style="border:solid;border-width:1px;background-color:transparent;" src="images/NeonLights.jpg" alt="Album Art" title="Album Art">
+ <audio id="NLights">
+  <source src="sounds/NeonLights.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+ <hr>
+ <button class="cusbutton" onclick="playNLights()">Play</button> &nbsp;
+ <button class="cusbutton" onclick="pauseNLights()">Pause</button>
+ <button class="cusbutton" onclick="stopNLights()">Stop</button>
+  </div>
+    
+ <script>
+function openFormMusicNLights() {
+  document.getElementById("MusicNLights").style.display = "block";
+ 
+}
+
+function closeFormMusicNLights() {
+  document.getElementById("MusicNLights").style.display = "none";
+  NLights.pause();
+  NLights.currentTime = 0;
+}
+
+var NLights = document.getElementById("NLights"); 
+
+function playNLights() { 
+  NLights.play(); 
+} 
+
+function pauseNLights() { 
+  NLights.pause(); 
+} 
+function stopNLights() { 
+  NLights.pause(); 
+  NLights.currentTime = 0;
+} 
+</script>
+
+ <!-- END OF LINK SPAN MUSIC NEON_LIGHTS -->
+ 
+  <!-- LINK SPAN ABOUT ERROR -->
+    <div class="form-popup" style="width:25%;height:36%;left:33%;z-index:10000;" id="aboutError">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>ERROR!<div onclick="closeFormaboutError()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+	
+	<p style="font-size:14px;color:red;text-shadow:1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;">Permission Denied!
+	<br>
+	<img style="border:none;background-color:transparent;" src="images/8bitfobidden.png">
+	<br>
+	<button style="z-index:0;" class="cusbutton" onclick="closeFormaboutError()">OK</button>
+	<audio id="myAudio">
+  <source src="sounds/DING.WAV" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+    </div>
+    
+ <script>
+ var x = document.getElementById("myAudio");
+function openFormaboutError() {
+  document.getElementById("aboutError").style.display = "block";
+  x.play(); 
+}
+
+function closeFormaboutError() {
+  document.getElementById("aboutError").style.display = "none";
+}
+</script>
+
+ <!-- END OF LINK SPAN ABOUT ERROR -->
+	
+	
+	<script>
+function openFormprogramman() {
+  document.getElementById("program-man").style.display = "inline";
+  document.getElementById("PRMico").style.display = "none";
+}
+
+function closeFormprogramman() {
+  document.getElementById("program-man").style.display = "none";
+  document.getElementById("PRMico").style.display = "block";
+}
+</script>
+	
+ <!-- END OF LINK SPAN DESKTOP -->
+ <div onclick="openFormprogramman()" class="program" id="PRMico">
+ <img src="images/PRM.PNG">
+ <p>Program Manager</p>
+
+ </div>
+ 
+<img id="crash" style="position:absolute;top:0px;left:0px;width:100%;height:100%;z-index:60000;display:none;" src="images/crash.png">
+<script>
+function crashOS() {
+  document.getElementById("crash").style.display = "block";
+}
+</script>
+</body>
+</html>
