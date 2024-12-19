@@ -253,7 +253,118 @@ I do most of my web stuff manually with the occasional use of open source code f
     
 
 
- <!-- END OF LINK SPAN ABOUT USER -->	  
+ <!-- END OF LINK SPAN ABOUT USER -->	 
+   <!-- LINK SPAN MUSIC -->
+    <div class="form-popup" style="width:35%;height:36%;top:22%;left:32%;z-index:1001;" id="Music">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>Music Files<div onclick="closeFormMusic()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+	
+<table class="desktoptable" cellpadding="1">
+<tbody>
+<tr>
+<td><div onclick="openFormMusicZelda()"><img src="images/MUSICFILE.PNG"><p>Zelda.MP3</p></div></td>
+<td><div onclick="openFormMusicNLights()"><img src="images/MUSICFILE.PNG"><p>NeonLights.MP3</p></div></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tbody>
+</table>
+    </div>
+ <!-- END OF LINK SPAN MUSIC -->
+	
+  <!-- LINK SPAN MUSIC ZELDA -->
+    <div class="form-popup" style="width:33%;height:47%;top:18%;left:15%;z-index:1002;" id="MusicZelda">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>Music Player BETA Version - Zelda.MP3<div onclick="closeFormMusicZelda()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+ <p>Title: The Legend of Zelda Theme (NES)</p>
+ <img style="border:solid;border-width:1px;background-color:transparent;" src="images/Zelda.png" alt="Album Art" title="Album Art">
+ <audio id="zeldaTheme">
+  <source src="sounds/TheLegendofZelda.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+ <hr>
+ <button class="cusbutton" onclick="playZelda()">Play</button> &nbsp;
+ <button class="cusbutton" onclick="pauseZelda()">Pause</button>
+ <button class="cusbutton" onclick="stopZelda()">Stop</button>
+  </div>
+    
+ <script>
+function openFormMusicZelda() {
+  document.getElementById("MusicZelda").style.display = "block";
+ 
+}
+
+function closeFormMusicZelda() {
+  document.getElementById("MusicZelda").style.display = "none";
+  zelda.pause();
+  zelda.currentTime = 0;
+}
+
+var zelda = document.getElementById("zeldaTheme"); 
+
+function playZelda() { 
+  zelda.play(); 
+} 
+
+function pauseZelda() { 
+  zelda.pause(); 
+} 
+function stopZelda() { 
+  zelda.pause(); 
+  zelda.currentTime = 0;
+} 
+</script>
+
+ <!-- END OF LINK SPAN MUSIC ZELDA -->	
+ 
+ <!-- LINK SPAN MUSIC NEON_LIGHTS -->
+    <div class="form-popup" style="width:33%;height:50%;top:18%;left:15%;z-index:1002;" id="MusicNLights">
+     
+  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>Music Player BETA Version - NeonLights.MP3<div onclick="closeFormMusicNLights()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
+ <p>Title: Neon Lights
+ <p>Artist: Stevia Sphere</p>
+ <img style="border:solid;border-width:1px;background-color:transparent;" src="images/NeonLights.jpg" alt="Album Art" title="Album Art">
+ <audio id="NLights">
+  <source src="sounds/NeonLights.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+ <hr>
+ <button class="cusbutton" onclick="playNLights()">Play</button> &nbsp;
+ <button class="cusbutton" onclick="pauseNLights()">Pause</button>
+ <button class="cusbutton" onclick="stopNLights()">Stop</button>
+  </div>
+    
+ <script>
+function openFormMusicNLights() {
+  document.getElementById("MusicNLights").style.display = "block";
+ 
+}
+
+function closeFormMusicNLights() {
+  document.getElementById("MusicNLights").style.display = "none";
+  NLights.pause();
+  NLights.currentTime = 0;
+}
+
+var NLights = document.getElementById("NLights"); 
+
+function playNLights() { 
+  NLights.play(); 
+} 
+
+function pauseNLights() { 
+  NLights.pause(); 
+} 
+function stopNLights() { 
+  NLights.pause(); 
+  NLights.currentTime = 0;
+} 
+</script>
+
+ <!-- END OF LINK SPAN MUSIC NEON_LIGHTS -->
+ 
   <!-- LINK SPAN ABOUT ERROR -->
     <div class="form-popup" style="width:25%;height:36%;left:33%;z-index:10000;" id="aboutError">
      
