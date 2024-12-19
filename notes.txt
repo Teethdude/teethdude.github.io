@@ -1,0 +1,4 @@
+Structure:
+ROOT > users > $USER-ROOT > preferences
+		       	    images
+			    descriptions
