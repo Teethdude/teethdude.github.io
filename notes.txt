@@ -1,4 +1,37 @@
+Non-exhaustive list of things & ideas.
+
 Structure:
 ROOT > users > $USER-ROOT > preferences
 		       	    images
 			    descriptions
+
+
+
+
+
+
+Database:
+
+	Users:
+		id (Primary Key)
+		username (Unique)
+		password (Hashed)
+		email (Unique)
+		role (Regular user or Admin)
+		created_at
+		updated_at
+
+	Themes:
+		id (Primary Key)
+		name
+		css_file_path
+
+	Posts:
+		id (Primary Key)
+		user_id (Foreign Key to Users.id)
+		title
+		content
+		created_at
+		updated_at
+
+
