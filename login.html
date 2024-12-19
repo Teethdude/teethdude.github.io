@@ -1,20 +1,59 @@
 <!doctype html>
 <html>
 <head>
-    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
 <title>TeethOS user tests.</title>
 <link rel="stylesheet" href="https://teethy.ca/css/main.css">
+<style>
+.login {
+    width: 24vw;
+    height: 32vh;
+    position: fixed;
+    top: 22vh;
+    left: 35vw;
+}
+
+.login-popup-fix {
+top:-22px;
+}
+
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:#572c78;border-style:NONE;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;background-color:transparent;}
+.tg th{border-color:#572c78;border-style:NONE;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;background-color:transparent;}
+.tg .tg-0lax{text-align:left;/*vertical-align:top*/}
+</style>
 </head>
 <body>
 
           <!-- LINK SPAN DESKTOP -->
 		  
-    <div class="form-window" id="program-man">
-  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>TeethOS 3.11<span style="padding-left:5px;font-weight:normal;font-family: wingdings, wingding, serif, sans-serif;">ÿ</span> [Logged in as <span style="color:aqua;">$USER</span>]<div class="minimise" onclick="closeFormprogramman()"><sup class="suppopup">▾</sup></div></h2></div></center>
+    <div class="form-window login" id="program-man">
+  <div class="divsticky"><center><h2 class="h2popup login-popup-fix"><div class="handle"><sup class="handle-dash">-</sup></div>Welcome to TeethOS<span style="padding-left:5px;font-weight:normal;font-family: wingdings, wingding, serif, sans-serif;">ÿ</span><div class="minimise"><sup class="suppopup" style="color:grey;">▾</sup></div></h2></div></center>
       
+	  
+	  <!--BEGIN LOGIN-->
+	  <form action="/action_page.php" method="post">
+<table class="tg"><thead>
+  <tr>
+    <td class="tg-0lax" rowspan="3" style="text-align:center;border:none;padding:0px;"><img style="padding-left:0px;max-width:40%;border:none;background-color:transparent;" src="https://teethy.ca/images/TeethOSmini.png"><br><label><input type="checkbox" name="remember"> Remember login?</label></td>
+    <td class="tg-0lax"><label for="uname"><b>Username:</b></label></td>
+    <td class="tg-0lax"><input type="text" placeholder="Enter Username" name="uname" required></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><label for="fromos"><b>Domain:</b></label></td>
+    <td class="tg-0lax"><input type="text" placeholder="teethy.ca" name="fromos" disabled></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><label for="psw"><b>Password:</b></label></td>
+    <td class="tg-0lax"><input type="password" placeholder="Enter Password" name="psw" required></td>
+  </tr></thead>
+</table><br>
 
-
-
+<button type="submit">Login</button>
     </div>  
   <!-- LINK SPAN ABOUT ERROR -->
     <div class="form-popup" style="width:25%;height:36%;left:33%;z-index:10000;" id="aboutError">
