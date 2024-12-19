@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html id="cursor-change">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
@@ -12,6 +12,7 @@
     position: fixed;
     top: 22vh;
     left: 35vw;
+	display:none;
 }
 
 .login-popup-fix {
@@ -25,6 +26,10 @@ top:-22px;
 .tg th{border-color:#572c78;border-style:NONE;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;background-color:transparent;}
 .tg .tg-0lax{text-align:left;/*vertical-align:top*/}
+
+html {
+cursor:wait;
+}
 </style>
 </head>
 <body>
@@ -83,4 +88,18 @@ top:-22px;
 <script src="https://teethy.ca/js/buttons.js"></script>
 <script src="https://teethy.ca/js/musicplayer.js"></script>
 </body>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+        const programMan = document.getElementById('program-man');
+        if (programMan) {
+            programMan.style.display = 'initial';
+        } else {
+            console.error('Element with ID "program-man" not found.');
+        }
+		 // Change <html> cursor from "wait" to "default"
+        document.documentElement.style.cursor = 'default';
+    }, 2000); // 2000 milliseconds = 2 seconds
+});
+</script>
 </html>
