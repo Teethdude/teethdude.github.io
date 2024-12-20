@@ -1,254 +1,73 @@
 <!doctype html>
 <html>
 <head>
-    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
-<title>TeethOS user tests.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+<title>Boot into TeethOS? - Teethy.ca</title>
 <link rel="stylesheet" href="https://teethy.ca/css/main.css">
+<style>
+
+/*CUSTOM FONTS*/
+    @font-face {
+  font-family: system;
+  src: url(fonts/DOS.ttf);
+  font-display: swap;    
+}
+
+html {cursor:crosshair;}
+
+body {
+font-family: system, monospace;
+background-color:black;
+background-image:none;
+text-align:center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+color:#c44fff;
+text-shadow:none !important; 
+margin-left:20px;
+
+}
+
+.page-container {
+border:3px double #c44fff;
+max-width:80vw;
+min-height:96vh;
+max-height:97vh;
+}
+
+.custom-button {
+border:3px double #c44fff;
+max-width:40px;
+color:#c44fff;
+font-size:large;
+
+}
+
+.custom-button-p {
+margin-bottom:1px;
+margin-top:1px;
+margin-left:5px;
+margin-right:5px;
+}
+.custom-button:hover, .custom-button-p:hover {
+color:black;
+background-color:#c44fff;
+border-color:black;
+}
 
 
-
+</style>
 </head>
 <body>
+<div class="page-container">
+<h1><span style="color:aqua;">[</span><span style="color:darkgrey;">Orca Computing BIOS</span><span style="color:aqua;">]</span></h1>
 
-          <!-- LINK SPAN DESKTOP -->
-		  
-    <div class="form-window" id="program-man">
-  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>TeethOS 3.11<span style="padding-left:5px;font-weight:normal;font-family: wingdings, wingding, serif, sans-serif;">ÿ</span> [Logged in as <span style="color:aqua;">$USER</span>]<div class="minimise" onclick="closeFormprogramman()"><sup class="suppopup">▾</sup></div></h2></div></center>
-       
- <img loading="lazy" style="position:fixed;border:none;background-color:transparent;max-width:25%;user-select:none;" src="https://teethy.ca/images/vapor-logo.png" alt="Logo image." title="Welcome to TeethOS">
-
-<table class="desktoptable" cellpadding="0">
-<tbody>
-<tr>
-<td><div onclick="openFormaboutError()"><img src="https://teethy.ca/images/DOS.PNG"><p>MS-DOS</p></div></td>
-<td><div onclick="openFormaboutError()"><img src="https://teethy.ca/images/FMAN.PNG"><p>File Manager</p></div></td>
-<td><div onclick="openFormaboutSystem()"><img src="https://teethy.ca/images/HLP.PNG"><p>About</p></div></td>
-<td><div onclick="openFormaboutUser()"><img src="https://teethy.ca/images/user.png"><p>User</p></div></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-
-
-</tr>
-<tr>
-
-<td><div onclick="openFormaboutProj()"><img src="https://teethy.ca/images/PROJ.PNG"><p>Projects</p></div></td>
-<td><div onclick="openFormaboutError()"><img src="https://teethy.ca/images/FRIENDS.PNG"><p>Friends-Partners</p></div></td>
-<td><div onclick="openFormaboutError()"><img src="https://teethy.ca/images/SITES.PNG"><p>Cool Sites</p></div></td>
-<td><div onclick="openFormMusic()"><img src="https://teethy.ca/images/MUSIC.PNG"><p>Music</p></div></td>
-<td>&nbsp;</td>
-
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-
-</tr>
-<tr>
-<td>&nbsp;</td>
-
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td><div onclick="openFormaboutError()"><img src="https://teethy.ca/images/CLK.PNG"><p>Clock</p></div></td>
-</tr>
-</tbody>
-</table>
-
- </div>
-	
-          <!-- LINK SPAN ABOUT USER -->
-    <div class="form-popup" style="height:62%;" id="aboutUser">
-     
-  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>About: Teethy<div onclick="closeFormaboutUser()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
-    <table style="text-align:left;" class="desktoptable">
-	
-    <tr style="z-index:0;">
-<td style="width:40%;"><img style="position:relative;top:-30%;padding-left:5px;border:none;background-color:transparent;max-width:90%;" src="https://teethy.ca/images/hairbrush.png"></td>
-<td style="padding-left:10px;width:60%;">
-<p style="font-size:14px;z-index:0;">Name: Teethy
-<p style="font-size:14px;">Birthday: 27-SEPT-1996
-<p style="font-size:14px;">Nationality: Canadian&nbsp;<img style="position:relative;top:5px;border:solid;border-color:#572c78;border-width:1px;" src="https://teethy.ca/images/ca.png">
-<hr>
-<p style="font-size:14px;">Bio: Hello! I'm Teethy. A hobbyist web designer from Canada. I mainly make gimmick websites that do weird or particular things.
-I do most of my web stuff manually with the occasional use of open source code found on the net.
-<p style="font-size:14px;">The character Teethy is like a mascot or avatar to represent me and my projects online. A cute symbol to give my sites some life.
-<hr>
-<p style="font-size:14px;">Contact:
-<p style="font-size:14px;">Email
-<p style="font-size:14px;">Twitter
-
-<hr>
-<img style="position:relative;top:0px;left:20%;border:none;background-color:transparent;max-width:90%;" src="https://teethy.ca/images/relax_tablet.png">
- </td>
-</tr>
-    </table>
-    <br><button class="cusbutton" onclick="closeFormaboutUser()">OK</button>
-    
-    </div>
-    
-
-
- <!-- END OF LINK SPAN ABOUT USER -->	  
-  <!-- LINK SPAN ABOUT ERROR -->
-    <div class="form-popup" style="width:25%;height:36%;left:33%;z-index:10000;" id="aboutError">
-     
-  <div class="divsticky"><center><h2 class="h2popup"><div class="handle"><sup class="handle-dash">-</sup></div>ERROR!<div onclick="closeFormaboutError()" class="minimise"><sup class="suppopup">▾</sup></div></h2></center></div>
-	
-	<p style="font-size:14px;color:red;text-shadow:1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;">Permission Denied!
-	<br>
-	<img style="border:none;background-color:transparent;" src="https://teethy.ca/images/8bitfobidden.png">
-	<br>
-	<button style="z-index:0;" class="cusbutton" onclick="closeFormaboutError()">OK</button>
-	<audio id="myAudio">
-  <source src="https://teethy.ca/sounds/DING.WAV" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
-    </div>
- <!-- END OF LINK SPAN ABOUT ERROR -->
-
- <!-- END OF LINK SPAN DESKTOP -->
- <div onclick="openFormprogramman()" class="program" id="PRMico">
- <img src="https://teethy.ca/images/PRM.PNG">
- <p>Program Manager</p>
-
- </div>
- 
-<img id="crash" style="position:absolute;top:0px;left:0px;width:100%;height:100%;z-index:60000;display:none;" src="https://teethy.ca/images/crash.png">
+<p>TeethOS 3.11 Detected!
+<p>Boot TeethOS?
+<div class="custom-button" onclick="location.href='login.html'">Yes</div>
+</div>
 <script src="https://teethy.ca/js/buttons.js"></script>
-<script src="https://teethy.ca/js/musicplayer.js"></script>
 </body>
 </html>
